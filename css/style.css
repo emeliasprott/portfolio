@@ -24,14 +24,7 @@
   font-family: "futura";
   src: url("/assets/fonts/FUTURA1986.otf") format("opentype");
 }
-@font-face {
-  font-family: "Zen Antique";
-  src: url("/assets/fonts/ZenAntique-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Fustat";
-  src: url("/assets/fonts/Fustat-Regular.ttf") format("truetype");
-}
+
 /* main */
 body {
   display: flex;
