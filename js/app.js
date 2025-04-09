@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
             aboutPage.style.opacity = '1';
             logo.style.opacity = '0';
             aboutPage.style.backgroundColor = 'var(--link-water)';
-            aboutPage.style.backgroundImage = `url("/assets/images/Asset\ 3.svg")`;
+            aboutPage.style.backgroundImage = `url("/assets/images/Asset3.svg")`;
             headerPage.style.backgroundColor = 'var(--link-water)';
             if (!aboutPageScrolledIntoView &&
                 scrollPosition < (aboutPage.offsetTop * 0.75)) {

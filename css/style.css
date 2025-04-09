@@ -148,7 +148,7 @@ nav.enhanced #nav-links :is(a, a:visited, a:hover, a.active) {
 /* about */
 #about.main-content-container {
   height: 105vh;
-  background-image: url("/assets/images/Asset\ 3.svg");
+  background-image: url("/assets/images/Asset3.svg");
 }
 #about .main-content {
   height: 100%;
@@ -182,9 +182,9 @@ nav.enhanced #nav-links :is(a, a:visited, a:hover, a.active) {
 #intro-p-text {
   font-size: 1.25em;
   color: var(--charcoal);
-  font-family: "Fustat";
+  font-family: "Fira Sans";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   word-spacing: 90%;
   line-height: 1.35em;
   display: grid;
@@ -514,14 +514,14 @@ nav.enhanced #nav-links :is(a, a:visited, a:hover, a.active) {
   margin-left: 5%;
   margin-right: 3%;
   font-size: 1em;
-  font-family: "Zen Antique";
-  font-weight: 400;
+  font-family: "Xanh Mono", monospace;
 }
 .skill-header {
   text-align: center;
   font-size: 1.2em;
-  font-weight: bold;
-  font-family: "Zen Antique";
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-style: italic;
   margin-bottom: 0;
   line-height: 1em;
 }
