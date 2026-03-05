@@ -1,192 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emelia Sprott — Computational Social Scientist</title>
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Computational social scientist focused on data-driven systems that explain human behavior, incentives, and institutions.">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- NAV -->
-    <header class="nav">
-        <div class="nav-inner">
-            <span class="name">Emelia Sprott</span>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#projects">Work</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <canvas id="dot-canvas"></canvas>
 
-    <!-- HERO -->
-    <section class="hero fade">
-        <div class="hero-inner fade-child">
-            <h1>Emelia Sprott</h1>
-            <p class="hero-subtitle">Computational Social Scientist & Data Scientist</p>
-            <p class="hero-description">Turning complex data into models and tools that support real-world
-                decision-making</p>
+    <nav>
+        <a href="#hero" class="nav-logo">Emelia Sprott</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-top">
+            <div class="hero-eyebrow">Computational Social Scientist · Data Scientist</div>
+            <h1 class="hero-name">
+                Emelia
+                <span>Sprott</span>
+            </h1>
+            <p class="hero-sub">Turning complex, messy data into models and tools that support real-world
+                decision-making.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn primary">View Work</a>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
         </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about fade">
-        <div class="content fade-child">
-            <h2>About</h2>
+    <section id="about">
+        <div class="about-body reveal">
+            <div class="section-label">About</div>
+            <h2 class="section-title">Where data meets<br><em>human systems</em></h2>
+            <p>I'm a computational social scientist trained at UC Berkeley, focused on building data-driven systems that
+                explain how people, incentives, and institutions interact.</p>
+            <p>My work sits at the intersection of machine learning, social science, and human behavior — especially
+                problems where context and institutional structure matter just as much as the model itself.</p>
+            <p>I enjoy building end-to-end: from structuring fragmented data, to modeling dynamics, to producing
+                insights that are interpretable, defensible, and genuinely useful.</p>
+        </div>
 
-            <div class="about-text">
-                <p>
-                    I'm a computational social scientist trained at UC Berkeley, focused on turning
-                    complex, messy data into models and tools that support real-world decision-making. I design
-                    data-driven
-                    systems that explain how people, incentives, and institutions interact.
-                </p>
-
-                <p>
-                    My work sits at the intersection of machine learning, social science, and human behavior.
-                    I'm especially interested in problems where context, incentives, and institutional
-                    structure matter just as much as the model itself.
-                </p>
-
-                <p>
-                    I enjoy building end-to-end systems: from structuring fragmented data, to modeling
-                    relationships and dynamics, to producing insights that are interpretable,
-                    defensible, and genuinely useful.
-                </p>
+        <div class="skills-block reveal">
+            <div>
+                <div class="skill-group-label">Modeling & Analysis</div>
+                <div class="tags">
+                    <span class="tag">Causal Inference</span>
+                    <span class="tag">Quasi-experimental</span>
+                    <span class="tag">Predictive Modeling</span>
+                    <span class="tag">Graph Methods</span>
+                    <span class="tag">Econometrics</span>
+                    <span class="tag">Statistical Modeling</span>
+                </div>
             </div>
-
-            <div class="skills fade-child">
-                <h3>Skills & Expertise</h3>
-
-                <div class="skill-list">
-                    <div class="skill-item">
-                        <h4>Modeling & Analysis</h4>
-                        <ul>
-                            <li>Causal inference & quasi-experimental methods</li>
-                            <li>Predictive modeling & machine learning</li>
-                            <li>Graph-based & relational modeling</li>
-                            <li>Statistical analysis & econometrics</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4>Data & Engineering</h4>
-                        <ul>
-                            <li>Data wrangling, feature engineering, ETL design</li>
-                            <li>SQL-based relational modeling</li>
-                            <li>Python & R for analysis & visualization</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4>Tools & Frameworks</h4>
-                        <ul>
-                            <li>Python (scikit-learn, PyTorch, Hugging Face)</li>
-                            <li>R (tidyverse, lme4, srvyr, Shiny)</li>
-                            <li>SQL, Git</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4>Research & Communication</h4>
-                        <ul>
-                            <li>Translating technical findings for non-technical audiences</li>
-                            <li>Stakeholder-focused insight generation</li>
-                            <li>Connecting models to real-world impact</li>
-                        </ul>
-                    </div>
+            <div>
+                <div class="skill-group-label">Data & Engineering</div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">ETL Design</span>
+                    <span class="tag">Feature Engineering</span>
+                    <span class="tag">scikit-learn</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">tidyverse</span>
+                    <span class="tag">Hugging Face</span>
+                </div>
+            </div>
+            <div>
+                <div class="skill-group-label">Research & Communication</div>
+                <div class="tags">
+                    <span class="tag">Stakeholder Reporting</span>
+                    <span class="tag">Technical Writing</span>
+                    <span class="tag">End-to-End Delivery</span>
+                    <span class="tag">Non-technical Audiences</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects fade">
-        <div class="projects-inner">
-            <h2 class="fade-child">Selected Work</h2>
-
-            <div class="projects-grid fade-child">
-                <article class="project-card">
-                    <div class="project-visual grad-1"></div>
-                    <div class="project-content">
-                        <span class="project-meta">Public Policy · Graph Modeling</span>
-                        <h3>
-                            <a href="https://github.com/emeliasprott/Capstone" target="_blank" rel="noopener">
-                                Decoding the State Legislature
-                            </a>
-                        </h3>
-                        <p>
-                            A deployable graph-based intelligence platform modeling influence,
-                            power, and policy dynamics within California's legislature.
-                        </p>
+    <section id="projects">
+        <div class="reveal">
+            <div class="section-label">Selected Work</div>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="project-list">
+            <a class="project-item reveal" href="https://github.com/emeliasprott/Capstone" target="_blank"
+                rel="noopener">
+                <div class="project-num">01</div>
+                <div class="project-meta">
+                    <div class="project-cats">
+                        <span class="project-cat">Public Policy</span>
+                        <span class="project-cat">Graph Modeling</span>
+                        <span class="project-cat">California Research Bureau</span>
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-visual grad-2"></div>
-                    <div class="project-content">
-                        <span class="project-meta">Experimental Design · Social Networks</span>
-                        <h3>
-                            <a href="https://github.com/emeliasprott/twitter_misinformation" target="_blank"
-                                rel="noopener">
-                                Misinformation & Platform Policy
-                            </a>
-                        </h3>
-                        <p>
-                            Causal modeling of how account suspensions reshape misinformation
-                            spread under post-intervention censorship.
-                        </p>
+                    <div class="project-name">Decoding the State Legislature</div>
+                    <p class="project-desc">A deployable graph-based intelligence platform modeling influence, power,
+                        and policy dynamics within California's legislature. Built end-to-end from 20+ years of legacy
+                        XML/DAT records into a stakeholder-facing analytics system with interpretable ML outputs.</p>
+                </div>
+                <div class="project-arrow">→</div>
+            </a>
+            <a class="project-item reveal" href="https://github.com/emeliasprott/twitter_misinformation" target="_blank"
+                rel="noopener">
+                <div class="project-num">02</div>
+                <div class="project-meta">
+                    <div class="project-cats">
+                        <span class="project-cat">Experimental Design</span>
+                        <span class="project-cat">Social Networks</span>
                     </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-visual grad-3"></div>
-                    <div class="project-content">
-                        <span class="project-meta">Economics · Urban Systems</span>
-                        <h3>
-                            <a href="housing.html">
-                                The Bay Area & the 2008 Housing Crash
-                            </a>
-                        </h3>
-                        <p>
-                            An econometric analysis of housing values, homeownership,
-                            and tax revenue following the 2008 recession.
-                        </p>
+                    <div class="project-name">Misinformation & Platform Policy</div>
+                    <p class="project-desc">Causal modeling of how account suspensions reshape misinformation spread
+                        under post-intervention censorship. Quasi-experimental methods applied to platform-scale
+                        behavioral data.</p>
+                </div>
+                <div class="project-arrow">→</div>
+            </a>
+            <a class="project-item reveal" href="housing.html">
+                <div class="project-num">03</div>
+                <div class="project-meta">
+                    <div class="project-cats">
+                        <span class="project-cat">Economics</span>
+                        <span class="project-cat">Urban Systems</span>
                     </div>
-                </article>
-            </div>
+                    <div class="project-name">The Bay Area & the 2008 Housing Crash</div>
+                    <p class="project-desc">An econometric analysis of housing values, homeownership rates, and tax
+                        revenue following the 2008 recession — examining differential impacts across Bay Area
+                        municipalities.</p>
+                </div>
+                <div class="project-arrow">→</div>
+            </a>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact fade">
-        <div class="content fade-child">
-            <h2>Let's Connect</h2>
-            <p class="contact-text">
-                I'm always interested in discussing new research, collaboration opportunities, or data challenges.
-            </p>
-            <div class="contact-links">
-                <a href="https://linkedin.com/in/emeliasprott" target="_blank" rel="noopener"
-                    class="contact-link">LinkedIn</a>
-                <a href="mailto:emelia@berkeley.edu" class="contact-link">emelia@berkeley.edu</a>
-            </div>
+    <section id="contact">
+        <div class="contact-left reveal">
+            <div class="section-label">Contact</div>
+            <h2>Let's work<br><em>together</em></h2>
+        </div>
+        <div class="contact-right reveal">
+            <a class="contact-link-row" href="https://linkedin.com/in/emeliasprott" target="_blank" rel="noopener">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">/in/emeliasprott</span>
+            </a>
+            <a class="contact-link-row" href="mailto:emelia@berkeley.edu">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">emelia@berkeley.edu</span>
+            </a>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <p>© 2025 Emelia Sprott</p>
-        </div>
+    <footer>
+        <span>© 2025 Emelia Sprott</span>
+        <span>Computational Social Scientist · UC Berkeley</span>
     </footer>
 
     <script src="script.js"></script>
