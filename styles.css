@@ -221,6 +221,7 @@ nav {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 4rem;
+  background-color: var(--blue);
 }
 .section-divider hr {
   border: none;
@@ -234,6 +235,7 @@ section:not(#hero) {
   max-width: 1160px;
   margin: 0 auto;
   padding: 6rem 4rem;
+  background-color: var(--blue);
 }
 
 .section-label {
@@ -470,6 +472,7 @@ section:not(#hero) {
 footer {
   position: relative;
   z-index: 1;
+  background-color: var(--blue);
   padding: 1.5rem 4rem;
   border-top: 1px solid var(--rule);
   display: flex;
