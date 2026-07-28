@@ -1,193 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emelia Sprott — Computational Social Scientist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:wght@300;400&display=swap"
-        rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Emelia Sprott — research, data, and political economy.">
+    <title>Emelia Sprott — Research & Data</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <header class="site-header" data-header>
+        <a class="wordmark" href="#top" aria-label="Emelia Sprott, back to top">ES</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <span class="section-indicator" aria-hidden="true"><span></span></span>
+    </header>
 
-    <canvas id="dot-canvas"></canvas>
-
-    <nav>
-        <a href="#hero" class="nav-logo">Emelia Sprott</a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="hero">
-        <div class="hero-top">
-            <div class="hero-eyebrow">Computational Social Scientist · Data Scientist</div>
-            <h1 class="hero-name">
-                Emelia
-                <span>Sprott</span>
-            </h1>
-            <p class="hero-sub">Turning complex, messy data into models and tools that support real-world
-                decision-making.</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn primary">View Work</a>
-                <a href="#contact" class="btn">Get in Touch</a>
+    <main id="main">
+        <section class="hero" id="top" data-section="Top">
+            <div class="hero-copy">
+                <p class="eyebrow">Data Science / Computational Social Science</p>
+                <h1>Emelia<br>Sprott</h1>
             </div>
-        </div>
-    </section>
 
-    <section id="about">
-        <div class="about-body reveal">
-            <div class="section-label">About</div>
-            <h2 class="section-title">Where data meets<br><em>human systems</em></h2>
-            <p>
-                I'm a computational social scientist trained at UC Berkeley, focused on the intersection of machine
-                learning, causal inference, and political economy.
-            </p>
-            <p>
-                I like building end-to-end: structuring messy data, modeling the dynamics underneath it, and producing
-                findings that are actually useful to the people who need them. The problems I find most interesting are
-                the ones where incentives and institutional structure matter just as much as the model itself.
-            </p>
+            <div class="sorting-stage" data-sorting-stage
+                aria-label="A dense pile of colorful geometric pieces above a partially filled sorting grid.">
+                <div class="shape-field" data-shape-field aria-hidden="true"></div>
+                <div class="sort-grid" data-sort-grid aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true">
+            <span></span><span></span><span></span>
         </div>
 
-        <div class="skills-block reveal">
-            <div>
-                <div class="skill-group-label">Modeling & Analysis</div>
-                <div class="tags">
-                    <span class="tag">Causal Inference</span>
-                    <span class="tag">Quasi-experimental</span>
-                    <span class="tag">Predictive Modeling</span>
-                    <span class="tag">Graph Methods</span>
-                    <span class="tag">Econometrics</span>
-                    <span class="tag">Statistical Modeling</span>
+        <section class="intro panel-section" data-section="Introduction">
+            <aside class="focus-card">
+                <p class="mini-label">TL;DR</p>
+                <p>
+                    Applied data scientist with a master's from UC Berkeley, experienced in taking complex projects from
+                    messy source data through to a clear, usable result.
+                </p>
+                <div class="focus-card__marks" aria-hidden="true">
+                    <span class="mark mark--circle"></span>
+                    <span class="mark mark--diamond"></span>
+                    <span class="mark mark--cross"></span>
                 </div>
-            </div>
-            <div>
-                <div class="skill-group-label">Data & Engineering</div>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">R</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">ETL Design</span>
-                    <span class="tag">Feature Engineering</span>
-                    <span class="tag">scikit-learn</span>
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">tidyverse</span>
-                    <span class="tag">Hugging Face</span>
+            </aside>
+        </section>
+
+        <div class="content-divider" aria-hidden="true"></div>
+
+        <section class="work" id="work" data-section="Work">
+            <div class="section-heading">
+                <div class="section-index">
+                    <span>Selected work</span>
+                </div>
+                <div class="work-heading__marks" aria-hidden="true">
+                    <span
+                        class="geo-shape work-header-shape work-header-shape--star shape--asterisk"><span></span></span>
+                    <span class="geo-shape work-header-shape work-header-shape--triangle shape--triangle"></span>
                 </div>
             </div>
-            <div>
-                <div class="skill-group-label">Research & Communication</div>
-                <div class="tags">
-                    <span class="tag">Stakeholder Reporting</span>
-                    <span class="tag">Technical Writing</span>
-                    <span class="tag">End-to-End Delivery</span>
-                    <span class="tag">Non-technical Audiences</span>
+
+            <article class="project project--rose">
+                <div class="project-copy">
+                    <h2>Mapping California Lawmaking:<br>A Legislative Database and Graph Neural Network</h2>
+                    <p>
+                        A legislative data system and heterogeneous graph neural network built to model how
+                        relationships among stakeholders shape California policy outcomes.
+                    </p>
+                    <ul class="project-tags" aria-label="Methods used">
+                        <li>Graph neural networks</li>
+                        <li>Relational data modeling</li>
+                        <li>Legislative analytics</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/emeliasprott/Capstone"
+                        aria-label="View Institutional Networks and Policy Diffusion">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <div class="project-visual project-visual--network" aria-hidden="true">
+                    <svg viewBox="0 0 500 340" role="presentation">
+                        <g class="links">
+                            <line x1="80" y1="110" x2="205" y2="70" />
+                            <line x1="80" y1="110" x2="165" y2="205" />
+                            <line x1="205" y1="70" x2="310" y2="135" />
+                            <line x1="165" y1="205" x2="310" y2="135" />
+                            <line x1="165" y1="205" x2="280" y2="280" />
+                            <line x1="310" y1="135" x2="420" y2="90" />
+                            <line x1="310" y1="135" x2="400" y2="245" />
+                            <line x1="280" y1="280" x2="400" y2="245" />
+                        </g>
+                        <g class="nodes">
+                            <circle cx="80" cy="110" r="16" />
+                            <rect x="189" y="54" width="32" height="32" />
+                            <circle cx="165" cy="205" r="22" />
+                            <rect x="294" y="119" width="32" height="32" />
+                            <circle cx="280" cy="280" r="13" />
+                            <rect x="406" y="76" width="28" height="28" />
+                            <circle cx="400" cy="245" r="20" />
+                        </g>
+                    </svg>
+                </div>
+            </article>
+
+            <article class="project project--blue">
+                <div class="project-copy">
+                    <h2>The Economics of AI Reliance</h2>
+                    <p>
+                        Using task-level data from the Anthropic Economic Index, this research applies credence-goods
+                        theory to estimate where people rely on AI for work they may not be able to evaluate
+                        independently.
+                    </p>
+                    <ul class="project-tags" aria-label="Methods used">
+                        <li>AI economics</li>
+                        <li>Expert services</li>
+                        <li>Technology adoption</li>
+                    </ul>
+                    <p class="project-link" aria-label="Read Abundant Expertise, Scarce Verification">
+                        Paper coming soon
+                    </p>
+                </div>
+                <div class="project-visual project-visual--credence" aria-hidden="true">
+                    <div class="visual-axis visual-axis--x"></div>
+                    <div class="visual-axis visual-axis--y"></div>
+                    <div class="visual-bar bar-1"></div>
+                    <div class="visual-bar bar-2"></div>
+                    <div class="visual-bar bar-3"></div>
+                </div>
+            </article>
+
+            <article class="project project--ochre">
+                <div class="project-copy">
+                    <h2>After the Crash:<br>Housing Recovery in the Bay Area</h2>
+                    <p>
+                        A neighborhood-level analysis on the long-term effects of the 2008 housing crash on the housing
+                        market in the Bay Area. Using federal mortgages, census, and regional economic data, I
+                        illustrate some of its lasting impacts on homeownership and displacement.
+                    </p>
+                    <ul class="project-tags" aria-label="Methods used">
+                        <li>Economic trends</li>
+                        <li>Event study</li>
+                    </ul>
+                    <a class="project-link" href="housing.html" aria-label="View Economic Change Across Place">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+                <div class="project-visual project-visual--trend" aria-hidden="true">
+                    <svg viewBox="0 0 500 340" role="presentation">
+                        <path class="trend-grid" d="M45 40V300M45 300H465M45 235H465M45 170H465M45 105H465" />
+                        <path class="trend-line trend-line--one"
+                            d="M45 248 C105 235 140 220 190 218 C240 215 285 190 330 140 C370 95 415 80 465 70" />
+                        <path class="trend-line trend-line--two"
+                            d="M45 255 C105 248 145 242 190 235 C250 228 295 220 335 215 C385 206 420 198 465 187" />
+                        <line class="event-line" x1="210" y1="38" x2="210" y2="300" />
+                    </svg>
+                </div>
+            </article>
+            <article class="project project--terracotta">
+                <div class="project-copy">
+                    <h2>Platform Enforcement and Misinformation on Twitter</h2>
+                    <p>
+                        Using synthetic difference-in-differences, this project estimates how a six-day wave of Twitter
+                        account suspensions changed misinformation sharing. The design addresses the unusual problem
+                        that enforcement itself removes some treated accounts from the observed post-suspension data.
+                    </p>
+                    <ul class="project-tags" aria-label="Methods used">
+                        <li>Synthetic difference-in-differences</li>
+                        <li>Causal inference</li>
+                        <li>Experiment design</li>
+                    </ul>
+                    <a class="project-link" href="https://github.com/emeliasprott/twitter_misinformation"
+                        aria-label="View Tracing Misinformation on Twitter">
+                        View project <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="project-visual project-visual--misinformation" aria-hidden="true">
+                    <div class="dag-visual">
+                        <span class="dag-edge dag-edge--ac"></span>
+                        <span class="dag-edge dag-edge--ad"></span>
+                        <span class="dag-edge dag-edge--bd"></span>
+                        <span class="dag-edge dag-edge--cy"></span>
+                        <span class="dag-edge dag-edge--dy"></span>
+                        <span class="dag-node dag-node--a"></span>
+                        <span class="dag-node dag-node--b"></span>
+                        <span class="dag-node dag-node--c"></span>
+                        <span class="dag-node dag-node--d"></span>
+                        <span class="dag-node dag-node--y"></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="about panel-section" id="about" data-section="About">
+            <aside class="about-rail">
+                <div class="about-side-rail" aria-hidden="true">
+                    <span class="rail-ring"></span>
+                    <span class="rail-diamond"></span>
+                    <span class="rail-plus"></span>
+                </div>
+
+                <div class="about-rail-content">
+                    <section class="about-rail-section">
+                        <p class="mini-label">Education</p>
+                        <p class="institution">UC Berkeley</p>
+
+                        <div class="degree-list">
+                            <p class="degree">
+                                <span class="degree-title">Master of Computational Social Science</span>
+                            </p>
+
+                            <p class="degree">
+                                <span class="degree-title">B.A. in Political Economy</span>
+                                <span class="degree-detail">Minor in Data Science</span>
+                            </p>
+                        </div>
+                    </section>
+
+                    <section class="about-rail-section">
+                        <p class="mini-label">Research &amp; Technical Practice</p>
+
+                        <ul class="practice-list">
+                            <li>Research design · Causal inference</li>
+                            <li>Natural language processing · Network analysis</li>
+                            <li>Graph modeling · Data engineering · Visualization</li>
+                            <li class="practice-tools">Python · R · SQL</li>
+                        </ul>
+                    </section>
+                </div>
+            </aside>
+
+            <div class="about-copy">
+                <p class="about-lead">
+                    Understanding the whole system.
+                </p>
+                <p>
+                    In my opinion, data makes more sense when understood within in terms of the system that generated
+                    it. Data science provides the technical foundation for my work, and political
+                    economy shapes how I frame questions and interpret evidence.
+                </p>
+                <p>
+                    I pay close attention to the
+                    relationships and incentives behind a dataset, then use that context to build analysis that is both
+                    methodologically sound and practically useful. I am most drawn to work where the difficult part is
+                    not only technical execution, but deciding what question to ask and what the available evidence can
+                    reasonably support.
+                </p>
+                <p>
+                    When I'm not looking for work, you can find me taking a year to make a quilt, falling asleep a few
+                    pages into a book, or being bossed around by a chihuahua named Garfunkel.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact" id="contact" data-section="Contact">
+            <div class="contact-copy">
+                <h2>Let's stay in touch!</h2>
+            </div>
+
+            <div class="contact-grid" aria-label="Contact links">
+                <a href="mailto:emelia@berkeley.edu" class="contact-cell contact-cell--wide">
+                    <span>Email</span>
+                    <strong>emelia@berkeley.edu</strong>
+                    <i aria-hidden="true">↗</i>
+                </a>
+                <a href="https://www.linkedin.com/in/emeliasprott" class="contact-cell">
+                    <span>LinkedIn</span>
+                    <i aria-hidden="true">↗</i>
+                </a>
+                <a href="https://github.com/emeliasprott" class="contact-cell">
+                    <span>GitHub</span>
+                    <i aria-hidden="true">↗</i>
+                </a>
+                <div class="contact-cell contact-cell--symbol" aria-hidden="true">
+                    <div class="contact-symbols">
+                        <span class="footer-symbol footer-symbol--diamond"></span>
+                        <span class="footer-symbol footer-symbol--cross"></span>
+                        <span class="footer-symbol footer-symbol--circle"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="projects">
-        <div class="reveal">
-            <div class="section-label">Selected Work</div>
-            <h2 class="section-title">Projects</h2>
-        </div>
-        <div class="project-list">
-            <a class="project-item reveal" href="https://github.com/emeliasprott/Capstone" target="_blank"
-                rel="noopener">
-                <div class="project-num">01</div>
-                <div class="project-meta">
-                    <div class="project-cats">
-                        <span class="project-cat">Public Policy</span>
-                        <span class="project-cat">Graph Modeling</span>
-                        <span class="project-cat">California Research Bureau</span>
-                    </div>
-                    <div class="project-name">Decoding the State Legislature</div>
-                    <p class="project-desc">A deployable graph-based intelligence platform modeling influence, power,
-                        and policy dynamics within California's legislature. Built end-to-end from 20+ years of legacy
-                        XML/DAT records into a stakeholder-facing analytics system with interpretable ML outputs.</p>
-                </div>
-                <div class="project-arrow">→</div>
-            </a>
-            <a class="project-item reveal" href="MoralCrumpleZone copy.pdf" target="_blank" rel="noopener">
-                <div class="project-num">02</div>
-                <div class="project-meta">
-                    <div class="project-cats">
-                        <span class="project-cat">AI Ethics</span>
-                        <span class="project-cat">Human-AI Interaction</span>
-                        <span class="project-cat">Research Paper</span>
-                    </div>
-                    <div class="project-name">The Moral Crumple Zone</div>
-                    <p class="project-desc">An empirical study of when and why human oversight erodes in everyday
-                        large language model use. Uses aggregate Claude.ai usage data across 3,259 O*NET task
-                        categories to identify structural conditions, not time pressure, that predict oversight
-                        failure.</p>
-                </div>
-                <div class="project-arrow">→</div>
-            </a>
-            <a class="project-item reveal" href="https://github.com/emeliasprott/twitter_misinformation" target="_blank"
-                rel="noopener">
-                <div class="project-num">03</div>
-                <div class="project-meta">
-                    <div class="project-cats">
-                        <span class="project-cat">Experimental Design</span>
-                        <span class="project-cat">Social Networks</span>
-                    </div>
-                    <div class="project-name">Misinformation & Platform Policy</div>
-                    <p class="project-desc">Causal modeling of how account suspensions reshape misinformation spread
-                        under post-intervention censorship. Quasi-experimental methods applied to platform-scale
-                        behavioral data.</p>
-                </div>
-                <div class="project-arrow">→</div>
-            </a>
-            <a class="project-item reveal" href="housing.html">
-                <div class="project-num">04</div>
-                <div class="project-meta">
-                    <div class="project-cats">
-                        <span class="project-cat">Economics</span>
-                        <span class="project-cat">Urban Systems</span>
-                    </div>
-                    <div class="project-name">The Bay Area & the 2008 Housing Crash</div>
-                    <p class="project-desc">An econometric analysis of housing values, homeownership rates, and tax
-                        revenue following the 2008 recession — examining differential impacts across Bay Area
-                        municipalities.</p>
-                </div>
-                <div class="project-arrow">→</div>
-            </a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="contact-left reveal">
-            <div class="section-label">Contact</div>
-            <h2>Let's work<br><em>together</em></h2>
-        </div>
-        <div class="contact-right reveal">
-            <a class="contact-link-row" href="https://linkedin.com/in/emeliasprott" target="_blank" rel="noopener">
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-val">/in/emeliasprott</span>
-            </a>
-            <a class="contact-link-row" href="mailto:emelia@berkeley.edu">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-val">emelia@berkeley.edu</span>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <span>© 2025 Emelia Sprott</span>
-        <span>Computational Social Scientist · UC Berkeley</span>
-    </footer>
-
-    <script src="script.js"></script>
+            <footer class="footer">
+                <span>© <span data-year></span> Emelia Sprott</span>
+                <a href="#top">Back to top ↑</a>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>
